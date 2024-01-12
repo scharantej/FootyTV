@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Football Games on TV Today</title>
+</head>
+<body>
+<h1>Football Games on TV Today in {{ country }}</h1>
+<ul>
+{% for game in games %}
+<li>{{ game.time }} - {{ game.teams }} ({{ game.channel }})</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
